@@ -3,8 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Carte de vizită</title>
-    <!-- Link pentru Font Awesome (pentru iconițe) -->
+    <title>Contact page</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -21,44 +20,45 @@
       }
       .card {
         display: flex;
-        align-items: center;
+        width: 600px;
+        height: 250px;
         border: 1px solid #ddd;
-        padding: 20px;
         border-radius: 10px;
-        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
         background-color: #fff;
-        max-width: 500px;
       }
       .card img {
-        border-radius: 50%;
-        width: 100px;
-        height: 100px;
-        margin-right: 20px;
+        width: 40%;
+        height: 100%;
         object-fit: cover;
       }
       .details {
+        padding: 20px;
+        width: 60%;
         display: flex;
         flex-direction: column;
+        justify-content: center;
       }
       .name {
-        font-size: 24px;
+        font-size: 30px;
         font-weight: bold;
         margin: 0;
       }
       .position {
-        font-size: 18px;
+        font-size: 20px;
         color: #555;
-        margin-bottom: 10px;
+        margin: 5px 0 40px 0; /* Spațiu între nume și funcție */
       }
       .contact-info {
         display: flex;
         align-items: center;
-        font-size: 16px;
-        margin-bottom: 5px;
+        font-size: 18px;
+        margin-bottom: 8px;
         color: #333;
       }
       .contact-info i {
-        margin-right: 8px;
+        margin-right: 10px;
         color: #666;
       }
       .contact-info a {
@@ -74,20 +74,20 @@
     <div class="card">
       <img src="img.jpeg" alt="Poza ta" />
       <div class="details">
-        <p class="name">Numele Tău</p>
-        <p class="position">Funcția Ta</p>
+        <p class="name">Vlad Simedru</p>
+        <p class="position">Senior Backend Developer</p>
         <div class="contact-info">
           <i class="fas fa-phone"></i>
-          <span>+40 123 456 789</span>
+          <span>+40 743 620 039</span>
         </div>
         <div class="contact-info">
           <i class="fas fa-envelope"></i>
-          <a href="mailto:emailul@exemplu.com">emailul@exemplu.com</a>
+          <a href="mailto:emailul@exemplu.com">vladsimedru@gmail.com</a>
         </div>
         <div class="contact-info">
           <i class="fab fa-github"></i>
-          <a href="https://github.com/numele_tău" target="_blank"
-            >github.com/numele_tău</a
+          <a href="https://www.linkedin.com/in/vladsimedru/" target="_blank"
+            >linkedin.com/in/vladsimedru/</a
           >
         </div>
       </div>
