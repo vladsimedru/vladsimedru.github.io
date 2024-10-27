@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Carte de vizită</title>
+    <!-- Link pentru Font Awesome (pentru iconițe) -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <style>
       body {
         display: flex;
@@ -11,31 +16,81 @@
         align-items: center;
         height: 100vh;
         font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #f5f5f5;
       }
       .card {
-        text-align: center;
+        display: flex;
+        align-items: center;
         border: 1px solid #ddd;
         padding: 20px;
-        width: 300px;
         border-radius: 10px;
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+        max-width: 500px;
+      }
+      .card img {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        margin-right: 20px;
+        object-fit: cover;
+      }
+      .details {
+        display: flex;
+        flex-direction: column;
       }
       .name {
         font-size: 24px;
         font-weight: bold;
+        margin: 0;
+      }
+      .position {
+        font-size: 18px;
+        color: #555;
         margin-bottom: 10px;
       }
       .contact-info {
-        font-size: 18px;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
         margin-bottom: 5px;
+        color: #333;
+      }
+      .contact-info i {
+        margin-right: 8px;
+        color: #666;
+      }
+      .contact-info a {
+        text-decoration: none;
+        color: #333;
+      }
+      .contact-info a:hover {
+        color: #007bff;
       }
     </style>
   </head>
   <body>
     <div class="card">
-      <div class="name">Numele Tău</div>
-      <div class="contact-info">Email: emailul@exemplu.com</div>
-      <div class="contact-info">Telefon: +40 123 456 789</div>
+      <img src="img.jpeg" alt="Poza ta" />
+      <div class="details">
+        <p class="name">Numele Tău</p>
+        <p class="position">Funcția Ta</p>
+        <div class="contact-info">
+          <i class="fas fa-phone"></i>
+          <span>+40 123 456 789</span>
+        </div>
+        <div class="contact-info">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:emailul@exemplu.com">emailul@exemplu.com</a>
+        </div>
+        <div class="contact-info">
+          <i class="fab fa-github"></i>
+          <a href="https://github.com/numele_tău" target="_blank"
+            >github.com/numele_tău</a
+          >
+        </div>
+      </div>
     </div>
   </body>
 </html>
