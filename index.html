@@ -68,6 +68,29 @@
       .contact-info a:hover {
         color: #007bff;
       }
+
+      /* Responsive styling for mobile devices */
+      @media (max-width: 768px) {
+        body {
+          height: 100%;
+          align-items: flex-start;
+          padding: 10px;
+        }
+        .card {
+          flex-direction: column;
+          width: 100%;
+          height: auto;
+          border-radius: 0;
+        }
+        .card img {
+          width: 100%;
+          height: auto;
+        }
+        .details {
+          width: 100%;
+          padding: 15px;
+        }
+      }
     </style>
   </head>
   <body>
